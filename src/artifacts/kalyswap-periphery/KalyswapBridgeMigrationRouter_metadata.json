@@ -1,0 +1,370 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "migratorAddress",
+						"type": "address"
+					}
+				],
+				"name": "addMigrator",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "bridgeMigrator",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "liquidityPairFrom",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "liquidityPairTo",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateChargeBack",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isAdmin",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "liquidityPairFrom",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "liquidityPairTo",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "migrateLiquidity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "liquidityPairFrom",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "liquidityPairTo",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "v",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					}
+				],
+				"name": "migrateLiquidityWithPermit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "migrateToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "removeAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addAdmin(address)": {
+					"details": "Any admin can add or remove other admins, careful.",
+					"params": {
+						"account": "The address of the account."
+					}
+				},
+				"addMigrator(address,address)": {
+					"params": {
+						"migratorAddress": "The WrappedERC20 token address that will be migrate the token",
+						"tokenAddress": "The ERC20 token address that will be migrated using the migrator"
+					}
+				},
+				"calculateChargeBack(address,address,uint256)": {
+					"details": "No need to be extra careful as this is only a view function",
+					"params": {
+						"amount": "The amount of the liquidity token to be migrated(simulated)",
+						"liquidityPairFrom": "The pair address that will be migrated from(simulated)",
+						"liquidityPairTo": "The pair address that will be migrated to(simulated)"
+					},
+					"returns": {
+						"amount0": "Amount of token0 will be charged back after the migration",
+						"amount1": "Amount of token1 will be charged back after the migration"
+					}
+				},
+				"isAdmin(address)": {
+					"params": {
+						"account": "The address of the account."
+					},
+					"returns": {
+						"_0": "Whether or not the account address is an admin."
+					}
+				},
+				"migrateLiquidity(address,address,address,uint256,uint256)": {
+					"details": "This function assumes sender already gave approval to move the assets",
+					"params": {
+						"amount": "The amount of token liquidityPairFrom that will be migrated",
+						"deadline": "The deadline limit that should be met, otherwise revert to prevent front-run",
+						"liquidityPairFrom": "The pair address to be migrated from",
+						"liquidityPairTo": "The pair address to be migrated to",
+						"to": "The address that will receive the liquidity and the charge backs"
+					}
+				},
+				"migrateLiquidityWithPermit(address,address,address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"params": {
+						"amount": "The amount of token liquidityPairFrom that will be migrated",
+						"deadline": "The deadline limit that should be met, otherwise revert to prevent front-run",
+						"liquidityPairFrom": "The pair address to be migrated from",
+						"liquidityPairTo": "The pair address to be migrated to",
+						"r": "by passing param for the permit validation",
+						"s": "by passing param for the permit validation",
+						"to": "The address that will receive the liquidity and the charge backs",
+						"v": "by passing param for the permit validation"
+					}
+				},
+				"migrateToken(address,address,uint256,uint256)": {
+					"details": "This function includes important checks",
+					"params": {
+						"amount": "The amount of the token to be migrated",
+						"deadline": "The deadline limit that should be met, otherwise revert to prevent front-run",
+						"to": "The address of who's receiving the token",
+						"token": "The ERC20 token address that will be migrated"
+					}
+				},
+				"removeAdmin(address)": {
+					"details": "Any admin can add or remove other admins, careful.",
+					"params": {
+						"account": "The address of the account."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"addAdmin(address)": {
+					"notice": "Given an address, this address is added to the list of admin."
+				},
+				"addMigrator(address,address)": {
+					"notice": "Given an token, and it's migrator address, it configures the migrator for later usage"
+				},
+				"calculateChargeBack(address,address,uint256)": {
+					"notice": "Front facing function that computes the possible charge back from the migration"
+				},
+				"isAdmin(address)": {
+					"notice": "Given an address, returns whether or not he's already an admin"
+				},
+				"migrateLiquidity(address,address,address,uint256,uint256)": {
+					"notice": "Front facing function that migrates the liquidity"
+				},
+				"migrateLiquidityWithPermit(address,address,address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"notice": "Front facing function that migrates the liquidity, with permit"
+				},
+				"migrateToken(address,address,uint256,uint256)": {
+					"notice": "Front facing function that migrates the token"
+				},
+				"removeAdmin(address)": {
+					"notice": "Given an address, this address is added to the list of admin."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CoreContracts/kalyswap-periphery/KalyswapBridgeMigrationRouter_flattened.sol": "KalyswapBridgeMigrationRouter"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 1000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CoreContracts/kalyswap-periphery/KalyswapBridgeMigrationRouter_flattened.sol": {
+			"keccak256": "0xd2d9f66c5eb7bf656274fa88abdf208bcd3287b192106a780f844711c813e892",
+			"urls": [
+				"bzz-raw://770229aede5a67a084166f3603d35f94c5d25f33936a6eb30be47873ecdca0fe",
+				"dweb:/ipfs/QmZFHoMx8SozWytDPcEA6vqvRQym5qdEQ1D3HzxebFR1FT"
+			]
+		}
+	},
+	"version": 1
+}

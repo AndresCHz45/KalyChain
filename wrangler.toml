@@ -1,0 +1,6 @@
+name = "kalyswap-app-temp"
+type = "javascript"
+route = "app.kalyswap.io/*"
+
+[site]
+bucket = "./build"

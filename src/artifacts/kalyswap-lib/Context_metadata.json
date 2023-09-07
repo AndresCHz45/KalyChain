@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CoreContracts/StakingRewards.sol": "Context"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 1000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CoreContracts/StakingRewards.sol": {
+			"keccak256": "0x1127b3144616e58f4d92bcf176e6bb57ab939531e57ad9ae1e67efa8ca7cd06c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://883c641552d9686e235dbf9c995b6239e3ab893817b307988394c42ea4e4d395",
+				"dweb:/ipfs/QmVqRc8nfeUTTk92YtGvtdv9YTRFS2DRwYNw6Sn3ZMmihB"
+			]
+		}
+	},
+	"version": 1
+}

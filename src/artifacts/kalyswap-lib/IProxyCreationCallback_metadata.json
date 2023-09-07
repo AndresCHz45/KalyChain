@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract GnosisSafeProxy",
+						"name": "proxy",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_singleton",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "initializer",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "saltNonce",
+						"type": "uint256"
+					}
+				],
+				"name": "proxyCreated",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GnosisSafeProxyFactory.sol": "IProxyCreationCallback"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/GnosisSafeProxyFactory.sol": {
+			"keccak256": "0x14e4004ba0cefaf58b9898bf6eb9f692dbac0c78f87f98e4d43b08ada388aef7",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://e3a695c1037665fc4c739b8399b1110eb43416af6737cc09fe90c255a1e0b0fc",
+				"dweb:/ipfs/QmShCNxPncmJQkX4pz3RCkMVKxTZXQf7CuGPE7TCr3tv9x"
+			]
+		}
+	},
+	"version": 1
+}
