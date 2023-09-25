@@ -2,10 +2,8 @@ import { TokenAmount } from '@kalycoinproject/sdk'
 import React, { useState, useRef } from 'react'
 import { Text } from 'rebass'
 import { NavLink } from 'react-router-dom'
-import { useLocation } from 'react-router'
 import { darken } from 'polished'
 import { useTranslation } from 'react-i18next'
-import { ChevronDown } from 'react-feather'
 import styled from 'styled-components'
 import Logo from '../../assets/svg/icon.svg'
 import { useActiveWeb3React } from '../../hooks'
@@ -24,7 +22,6 @@ import usePrevious from '../../hooks/usePrevious'
 import LanguageSelection from '../LanguageSelection'
 import { ApplicationModal } from '../../state/application/actions'
 import { useModalOpen, useToggleModal } from '../../state/application/hooks'
-import { MenuFlyout, MenuNavItem } from '../StyledMenu'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import { BRIDGE_PAGE, NETWORK_LABELS, NETWORK_CURRENCY } from 'src/constants'
 import { Hidden } from 'src/theme'
@@ -217,27 +214,6 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 `
 
-const StyledLink = styled.div<{ isActive: boolean }>`
-  ${({ theme }) => theme.flexRowNoWrap}
-  align-items: left;
-  border-radius: 3rem;
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
-  color: ${({ theme, isActive }) => (isActive ? theme.text1 : theme.text2)};
-  font-size: 1rem;
-  width: fit-content;
-  margin: 0 12px;
-  font-weight: ${({ isActive }) => (isActive ? 600 : 500)};
-  font-weight: 500;
-  line-height: 24px;
-
-  :hover,
-  :focus {
-    color: ${({ theme }) => darken(0.1, theme.text1)};
-  }
-`
-
 const StyledExternalLink = styled(ExternalLink).attrs({
   activeClassName
 })<{ isActive?: boolean }>`
@@ -270,19 +246,11 @@ const StyledExternalLink = styled(ExternalLink).attrs({
 `}
 `
 
-const NarrowMenuFlyout = styled(MenuFlyout)`
-  min-width: 8.125rem;
-  left: 15rem;
-  right: auto !important;
-`
-
 export default function Header() {
   const { account } = useActiveWeb3React()
   const chainId = useChainId()
 
   const { t } = useTranslation()
-
-  const location: any = useLocation()
 
   const userEthBalance = useETHBalances(chainId, account ? [account] : [])?.[account ?? '']
 
@@ -329,24 +297,11 @@ export default function Header() {
             {t('header.pool')}
           </StyledNavLink>
 
-          <StyledLink
+          <StyledNavLink
             id={`kswap-nav-link`}
-            onClick={toggle}
-            isActive={location?.pathname?.startsWith('/kswap')}
-            ref={node as any}
-          >
-            {t('header.farm')} <ChevronDown size={24} />
-            {open && (
-              <NarrowMenuFlyout>
-                <MenuNavItem id="link" to={'/kswap/1'}>
-                  {t('header.version1')}
-                </MenuNavItem>
-                <MenuNavItem id="link" to={'/kswap/2'}>
-                  {t('header.version2')}
-                </MenuNavItem>
-              </NarrowMenuFlyout>
-            )}
-          </StyledLink>
+            to={'/kswap/1'}>
+            {t('header.farm')}  
+          </StyledNavLink>
 
           <StyledNavLink
             id={`stake-nav-link`}

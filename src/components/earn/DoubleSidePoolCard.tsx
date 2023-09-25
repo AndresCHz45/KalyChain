@@ -6,7 +6,7 @@ import { TYPE, StyledInternalLink } from '../../theme'
 import DoubleCurrencyLogo from '../DoubleLogo'
 import { KLC, Token, CHAINS } from '@kalycoinproject/sdk'
 import { ButtonPrimary } from '../Button'
-import { DoubleSideStakingInfo, useMinichefPools } from '../../state/stake/hooks'
+import { DoubleSideStakingInfo } from '../../state/stake/hooks'
 import { useColor } from '../../hooks/useColor'
 import { currencyId } from '../../utils/currencyId'
 import { Break, CardNoise, CardBGImage } from './styled'
@@ -16,7 +16,6 @@ import { useTranslation } from 'react-i18next'
 import RewardTokens from '../RewardTokens'
 import { Box } from '@kalycoinproject/components'
 import { useTokens } from '../../hooks/Tokens'
-import { BETA_MENU_LINK } from 'src/constants'
 import { useChainId } from 'src/hooks'
 
 const StatContainer = styled.div`
@@ -102,7 +101,7 @@ export default function DoubleSidePoolCard({
   const currency0 = unwrappedToken(token0, chainId)
   const currency1 = unwrappedToken(token1, chainId)
 
-  const poolMap = useMinichefPools()
+  //const poolMap = useMinichefPools()
 
   const { t } = useTranslation()
   const isStaking = Boolean(stakingInfo.stakedAmount.greaterThan('0'))
@@ -122,7 +121,7 @@ export default function DoubleSidePoolCard({
 
   const backgroundColor = useColor(token)
 
-  const pairAddress = stakingInfo?.stakedAmount?.token?.address
+  //const pairAddress = stakingInfo?.stakedAmount?.token?.address
 
   const rewardTokens = useTokens(stakingInfo?.rewardTokensAddress)
 
@@ -145,14 +144,6 @@ export default function DoubleSidePoolCard({
             </Box>
           )}
 
-          {/* Beta Migration */}
-          {isStaking && Number(version) === 1 && poolMap.hasOwnProperty(pairAddress) ? (
-            <StyledInternalLink to={`${BETA_MENU_LINK.migrate}/${version}`} style={{ marginRight: '10px' }}>
-              <ButtonPrimary padding="8px" borderRadius="8px">
-                Migrate
-              </ButtonPrimary>
-            </StyledInternalLink>
-          ) : null}
 
           {(isStaking || !stakingInfo.isPeriodFinished) && (
             <StyledInternalLink

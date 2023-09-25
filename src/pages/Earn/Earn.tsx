@@ -287,26 +287,13 @@ const Earn: React.FC<EarnProps> = ({ version, stakingInfos, poolMap }) => {
               <AutoRow justify="space-between">
                 <ExternalLink
                   style={{ color: 'white', textDecoration: 'underline' }}
-                  href="https://kalyswap.io/litepaper"
+                  href="https://kalyswap.io/"
                   target="_blank"
                 >
                   <TYPE.white fontSize={14}>{t('earnPage.readMoreAboutKswap')}</TYPE.white>
                 </ExternalLink>
                 <FlexDiv>
-                  <ExternalLink
-                    style={{ color: 'white', textDecoration: 'underline', marginRight: 10 }}
-                    href="https://app.nexusmutual.io/cover/buy/get-quote?address=0xefa94DE7a4656D787667C749f7E1223D71E9FD88"
-                    target="_blank"
-                  >
-                    <TYPE.white fontSize={14}>{t('earnPage.getCoverNexusMutual')}</TYPE.white>
-                  </ExternalLink>
-                  <ExternalLink
-                    style={{ color: 'white', textDecoration: 'underline' }}
-                    href="https://app.insurace.io/Insurance/BuyCovers?referrer=565928487188065888397039055593264600345483712698"
-                    target="_blank"
-                  >
-                    <TYPE.white fontSize={14}>{t('earnPage.getInsuranceCoverage')}</TYPE.white>
-                  </ExternalLink>
+                 
                 </FlexDiv>
               </AutoRow>
             </AutoColumn>

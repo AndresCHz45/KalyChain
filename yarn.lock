@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@alchemy-pay/ramp-sdk@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@alchemy-pay/ramp-sdk/-/ramp-sdk-1.0.2.tgz#c91a37e9e33764d47e926414f9088887ae3b4190"
+  integrity sha512-4KhEmxGbZlQaWUx89XJMZzLCBXpge01rNcMXb4S+UrBRexJnHxtomFYF1pXvq4inbPFcGLbTe6mwmeusJItYcQ==
+
 "@ampproject/remapping@^2.1.0":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.1.2.tgz#4edca94973ded9630d20101cd8559cedb8d8bd34"
@@ -2139,10 +2144,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@kalycoinproject/components@3.0.26":
-  version "3.0.26"
-  resolved "https://registry.yarnpkg.com/@kalycoinproject/components/-/components-3.0.26.tgz#7f9f0635ae54cf5d7779754a3fa153447c3d2cb9"
-  integrity sha512-bgVLRb3MTFcLVkhK4exty8qofj6OaPvC+5TNUL3LKwBefRBONDOMpkL7t+QzjfTxPekpz5G5KXLRgxOuhJHmKw==
+"@kalycoinproject/components@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@kalycoinproject/components/-/components-3.1.1.tgz#c4bf72f39d21afeae9a2dc3cb927841edd3edecf"
+  integrity sha512-jdFOvgdwIg+KHyUfUuj3vKwYjq3JCOzyu5kbIwLcAbPCLhDXbh6OiMl+Cal2BNM/zTfHeZjy0O34sI3LbOsPMw==
   dependencies:
     "@kalycoinproject/web3-react-injected-connector" "^1.0.3"
     cids "^1.1.9"
@@ -2173,10 +2178,10 @@
     csv-batch "^2.0.2"
     openzeppelin-solidity "^3.4.0"
 
-"@kalycoinproject/sdk@2.1.12":
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/@kalycoinproject/sdk/-/sdk-2.1.12.tgz#61ee968ce6ec2a047a00c73e73dadef9f642172a"
-  integrity sha512-44DirVLztFBiYozsO/LWxoNFkI+RQ3okSOV9ODCpGkqTroLIoQrHsp/1Y5k5aGRITqrKlwbzMpDEHn22UsoqXg==
+"@kalycoinproject/sdk@2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@kalycoinproject/sdk/-/sdk-2.2.2.tgz#4604ae920b69f446eed84a7c5883508a3324c2d6"
+  integrity sha512-yQX3IPdZ+PBqsPPppO7B39BFhM6ksViQocFYoS2QPrmohoU+KoeB60cM8NWQHVmdSKqQdATo7Wf3+k0wYhGOxQ==
   dependencies:
     "@kalycoinproject/exchange-contracts" "2.0.3"
     big.js "^5.2.2"

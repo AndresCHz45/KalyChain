@@ -6,15 +6,9 @@ export const SINGLE_SIDE_STAKING: { [key: string]: SingleSideStaking } = {
   KSWAP_V0: {
     rewardToken: KSWAP[ChainId.KALYCHAIN],
     conversionRouteHops: [WKLC[ChainId.KALYCHAIN]],
-    stakingRewardAddress: '0xA9f1eB89452f825Bbc59007FAe13233953910582',
+    stakingRewardAddress: '0xA42EbDA6371358643AD4973F1fb3DA75d32af98A',
     version: 0 
-  },
-  KSWAP_V1: {
-    rewardToken: KSWAP[ChainId.TESTNET],
-    conversionRouteHops: [WKLC[ChainId.TESTNET]],
-    stakingRewardAddress: '0x9bF0dBF13fB722F33751BeCD5D7877cCE447fa60',
-    version: 0 
-  } 
+  }
 }
 
 export const SINGLE_SIDE_STAKING_V0: SingleSideStaking[] = Object.values(SINGLE_SIDE_STAKING).filter(

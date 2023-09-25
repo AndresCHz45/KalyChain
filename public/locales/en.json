@@ -318,16 +318,16 @@
     "claim": "Claim "
   },
   "earnPage": {
-    "KalySwapLiquidityMining": "KalySwap liquidity mining",
-    "KalySwapLiquidityStaking": "KalySwap KSWAP staking",
-    "depositKalySwapLiquidity": "Deposit your KalySwap Liquidity Provider KSL tokens to receive KSWAP, the KalySwap protocol governance token.",
-    "depositKalySwapStaking": "Deposit and stake your KSWAP tokens to earn more tokens.",
+    "kalyswapLiquidityMining": "KalySwap liquidity mining",
+    "kalyswapLiquidityStaking": "KalySwap KSWAP staking",
+    "depositKalyswapLiquidity": "Deposit your KalySwap Liquidity Provider KSL tokens to receive KSWAP, the KalySwap protocol governance token.",
+    "depositKalyswapStaking": "Deposit and stake your KSWAP tokens to earn more tokens.",
     "currentOpportunities": "Current opportunities",
     "readMoreAboutKswap": "Read more about KSWAP",
     "getInsuranceCoverage": "Get cover on InsurAce.io",
     "getCoverNexusMutual": "Get cover on Nexus Mutual",
     "importantUpdate": "IMPORTANT UPDATE",
-    "KalySwapGovernanceProposalResult": "As a result of KalySwap governance proposal 1, KalySwap is changing staking contracts! After approximately 08:59 UTC on 4/19, all staking rewards will be distributed to the new staking contracts. Before the switch, all rewards will still be distributed to the old contracts. To avoid interruptions to yield farming rewards, you need to unstake your liquidity from the old contracts and restake in the new contracts. You do not need to remove liquidity from your pools or alter your positions.",
+    "kalyswapGovernanceProposalResult": "As a result of KalySwap governance proposal 1, KalySwap is changing staking contracts! After approximately 08:59 UTC on 4/19, all staking rewards will be distributed to the new staking contracts. Before the switch, all rewards will still be distributed to the old contracts. To avoid interruptions to yield farming rewards, you need to unstake your liquidity from the old contracts and restake in the new contracts. You do not need to remove liquidity from your pools or alter your positions.",
     "oldKswapPools": "Old KSWAP pools",
     "newKswapPools": "New KSWAP pools",
     "participatingPools": "Participating pools",
@@ -463,7 +463,7 @@
     "seeLess": "See Less"
   },
   "buyPage": {
-    "buyKlcInfo": "Buy KLC with fiat from our partner Wyre.",
+    "buyKlcInfo": "Buy Crypto with fiat from our partner AlchemyPay.",
     "privacyInfo": "KalySwap does not store your purchase history or any personal data.",
     "firstName": "First Name",
     "lastName": "Last Name",
@@ -473,7 +473,7 @@
   "votePage": {
     "unlockVotes": "Unlock Votes",
     "updateDelegation": "Update Delegation",
-    "KalySwapGovernance": "KalySwap Governance",
+    "kalyswapGovernance": "KalySwap Governance",
     "earnedKswapTokens": "KSWAP tokens represent voting shares in KalySwap governance. You can vote on each proposal yourself or delegate your votes to a third party.",
     "eligibleToVote": "To be eligible to vote, you must hold KSWAP in your wallet and delegate it at the start of voting. After voting has begun, you may pool or spend your KSWAP.",
     "governanceVotes": "Governance votes are decided by simple majority. There is no quorum threshold.",

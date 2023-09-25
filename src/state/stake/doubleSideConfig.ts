@@ -6,18 +6,13 @@ import { BridgeMigrator, DoubleSideStaking, Migration } from './hooks'
 export const DOUBLE_SIDE_STAKING: { [key: string]: DoubleSideStaking } = {
   WKLC_KSWAP_V1: {
     tokens: [WKLC[ChainId.KALYCHAIN], TOKENS.KSWAP[ChainId.KALYCHAIN]],
-    stakingRewardAddress: '0xA9f1eB89452f825Bbc59007FAe13233953910582',
+    stakingRewardAddress: '0xaeE3B717Fb33D9fdDb4FBd0A6906Bc34Da5a67ab',
     version: 1,
     multiplier: 0
   },
   WKLC_KSWAP_V2: {
     tokens: [WKLC[ChainId.KALYCHAIN], TOKENS.KSWAP[ChainId.KALYCHAIN]],
     stakingRewardAddress: MINICHEF_ADDRESS[ChainId.KALYCHAIN],
-    version: 2
-  },
-  WKLC_KSWAP_TN: {
-    tokens: [WKLC[ChainId.TESTNET], TOKENS.KSWAP[ChainId.TESTNET]],
-    stakingRewardAddress: MINICHEF_ADDRESS[ChainId.TESTNET],
     version: 2
   },
 }

@@ -22,13 +22,13 @@ export const governanceClient = new ApolloClient({
 })
 
 export const mininchefV2Client = new GraphQLClient(
-  'https://api.thegraph.com/subgraphs/name/sarjuhansaliya/minichefv2-dummy',
+  'https://graph.kalychain.io/subgraphs/name/kalyswap/minichef-dummy',
   { headers: {} }
 )
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/dasconnor/kalychain-blocks'
+    uri: 'https://graph.kalychain.io/subgraphs/name/kalyswap/kalychain-blocks'
   }),
   cache: new InMemoryCache()
 })

@@ -30,6 +30,7 @@ export const redirectToWyre = async (data: any): Promise<boolean> => {
     const responseBody = await response.json()
     if (response.status === 200) {
       if (responseBody.url) {
+        
         window.open(responseBody.url, '_self')
       } else {
         console.debug('No URL returned by Wyre')
