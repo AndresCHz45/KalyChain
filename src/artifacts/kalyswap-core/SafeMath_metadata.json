@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CoreContracts/kalyswap-core/KalyswapFactory_flattened.sol": "SafeMath"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 1000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CoreContracts/kalyswap-core/KalyswapFactory_flattened.sol": {
+			"keccak256": "0x46508074f90971c7f31cf80e5ab6b51245ed64cbbbdce0348aa7d9e03437207d",
+			"urls": [
+				"bzz-raw://057ed29d53741c859d1609291ba1bbc118259e401caa1dbc57b82e779d88b0e4",
+				"dweb:/ipfs/QmT1iMAUDTXSRNSph41bsB4B7Pw8qQ6Zhw4CMDCYuzcPzh"
+			]
+		}
+	},
+	"version": 1
+}

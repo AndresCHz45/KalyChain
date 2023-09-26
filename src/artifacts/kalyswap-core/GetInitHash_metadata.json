@@ -1,0 +1,123 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getInitHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/kalyswap-core/GetInitHashCode.sol": "GetInitHash"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/kalyswap-core/GetInitHashCode.sol": {
+			"keccak256": "0x31910c578879eca8faa53721557ec2923831429402c473b968322c3e5ab5f838",
+			"urls": [
+				"bzz-raw://280faa672ecd9f8935e24179d39d6734a448333d047451c3ea8f00978c079bbb",
+				"dweb:/ipfs/QmbHJc9QVLw91g6xpZiD17myhPhdi5esxJUbzys15QVpGA"
+			]
+		},
+		"contracts/kalyswap-core/KalyswapERC20.sol": {
+			"keccak256": "0x816e77f07939629dd8e8150e9ffece1bd3a2cc2e1665067d8b0c85b66b369a61",
+			"urls": [
+				"bzz-raw://01bae32903060903afbe81ae28a72c52bd0927f971cc342bf8b3c9364f832ec1",
+				"dweb:/ipfs/QmZzhHZQbgkvN4MchECRbXrbAdtwy9PVju3kgMtcJBZ2BV"
+			]
+		},
+		"contracts/kalyswap-core/KalyswapPair.sol": {
+			"keccak256": "0x6b829ec763e3fa9a5de728809db02b3954b5f7ec07e67807a162703a94b19608",
+			"urls": [
+				"bzz-raw://0a73d3c5e51cc2ebcf6c55fe633ff5aba7e77795d13c6c0b2613364f947d4f31",
+				"dweb:/ipfs/QmXRypQA7WUk4Ggu3xjioQk5be9pxLZpBkXiwxgahrE91d"
+			]
+		},
+		"contracts/kalyswap-core/interfaces/IERC20.sol": {
+			"keccak256": "0x61db17aebc5d812c7002d15c1da954065e56abe49d64b14c034abe5604d70eb3",
+			"urls": [
+				"bzz-raw://b006685e753f9120469f10b09c159f222d4cb8b507a6c1f0c14ed50c883ebe66",
+				"dweb:/ipfs/QmSyY7iTugbczPwfGK67etiyPULenYGzzRYbt8aabwwkUb"
+			]
+		},
+		"contracts/kalyswap-core/interfaces/IKalyswapCallee.sol": {
+			"keccak256": "0x29000be06896b7d77bfebe056233de2966a771b8c830d6b2df7c00e81fdaf79e",
+			"urls": [
+				"bzz-raw://3b8544652b4e63b3f7208419c2e86e5ead42442b53c153358bc8237037f54f31",
+				"dweb:/ipfs/QmV9kRZzNZezXuetmGGEeHTaCRikJq3i1Y1aArPo5qrKWV"
+			]
+		},
+		"contracts/kalyswap-core/interfaces/IKalyswapERC20.sol": {
+			"keccak256": "0xdfafc93cc637ae528f35b1f2bfc38156b977477d0075dcab0036a899f2a8d594",
+			"urls": [
+				"bzz-raw://e2061c6ec30bc96e4869494a70c325b2d26db7c62f53877c44134ff72df09bd7",
+				"dweb:/ipfs/QmfEBXe1rFgQbzFfpifdbgETdSYUaBy7WYAAZSr7jirUG6"
+			]
+		},
+		"contracts/kalyswap-core/interfaces/IKalyswapFactory.sol": {
+			"keccak256": "0xa614ed4f9dc2ed32c1f7d03d60c41d2ff204fccbe413bb2e7cbbfbfe29061728",
+			"urls": [
+				"bzz-raw://8d99392c6dd7eb99ba185d7d0fcc8ac018b6d845ffaf5ca21986a045bee50323",
+				"dweb:/ipfs/QmYGMMvoAdX5wieRdiLBpNsUs3RSrV5jXPYxwpPvR22npK"
+			]
+		},
+		"contracts/kalyswap-core/interfaces/IKalyswapPair.sol": {
+			"keccak256": "0xd05210b00f31f9557ffbbd3b5df0098a2196d33a07a38504a932578ef0c97a61",
+			"urls": [
+				"bzz-raw://f64916071f9d3d91e1167620711cfed8c7e7797489ad25351295cf21aebeaaba",
+				"dweb:/ipfs/QmXTYWuhMBiUm7zoyiUyKYjQPpa1z8xkiPgPbS25jNP52f"
+			]
+		},
+		"contracts/kalyswap-core/libraries/Math.sol": {
+			"keccak256": "0x05927cb4aa14897bd567607522c18d2d518fa803ade6f870fac244c6f3702a3b",
+			"urls": [
+				"bzz-raw://b2805464c2d75cbdd726d6bd5c9b8d1f2c8566b606ec769ffa9a194a42248862",
+				"dweb:/ipfs/QmWBa9BsCH8gbncvDFXmfMJX1USTHvAREtc8C7nz6miQpw"
+			]
+		},
+		"contracts/kalyswap-core/libraries/SafeMath.sol": {
+			"keccak256": "0x9c8465de751317860b623cd77f7f53f41a84b6624c0580ee526dcf7a2b7cb80c",
+			"urls": [
+				"bzz-raw://9b371b3eb0649b486f76cd628cc060354d1ac11fa8baed1170567271655f05d7",
+				"dweb:/ipfs/QmTUg31wK9UyX6o1Q1mxE4DQhuc1rWGBanNTu1uagNVQB6"
+			]
+		},
+		"contracts/kalyswap-core/libraries/UQ112x112.sol": {
+			"keccak256": "0x2240694530251ab376ae468d0a2d3ee8b3109e56f2acadbc203cdf341506dd31",
+			"urls": [
+				"bzz-raw://56f55c411faa2924df0915ff77129b9d8c64d3e4d28554e7234f3774ac95958a",
+				"dweb:/ipfs/QmYrzUurXL8ijzS8EnLtQTVD7fKPReosg2DsEPXXCY7ec3"
+			]
+		}
+	},
+	"version": 1
+}

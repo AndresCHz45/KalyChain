@@ -1,0 +1,40 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CoreContracts/kalyswap-periphery/KalyswapRouter_flattened.sol": "TransferHelper"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 1000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CoreContracts/kalyswap-periphery/KalyswapRouter_flattened.sol": {
+			"keccak256": "0x91808a10dce568d38659a9c79dc683d501b83dbda2fa6fba278a18c0ccd83b9f",
+			"urls": [
+				"bzz-raw://fc7af180877ea3e161d5c208b2ec62f74a43b6b2ab60a91c32d0ab3f2e591a5d",
+				"dweb:/ipfs/QmcodZ94pvTrWmTvR8WEaybJfyGJyW8A2faay64kLZy1Wv"
+			]
+		}
+	},
+	"version": 1
+}

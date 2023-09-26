@@ -1,0 +1,248 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "contract GnosisSafeProxy",
+						"name": "proxy",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "singleton",
+						"type": "address"
+					}
+				],
+				"name": "ProxyCreation",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_singleton",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "initializer",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "saltNonce",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateCreateProxyWithNonceAddress",
+				"outputs": [
+					{
+						"internalType": "contract GnosisSafeProxy",
+						"name": "proxy",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "singleton",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "createProxy",
+				"outputs": [
+					{
+						"internalType": "contract GnosisSafeProxy",
+						"name": "proxy",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_singleton",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "initializer",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "saltNonce",
+						"type": "uint256"
+					},
+					{
+						"internalType": "contract IProxyCreationCallback",
+						"name": "callback",
+						"type": "address"
+					}
+				],
+				"name": "createProxyWithCallback",
+				"outputs": [
+					{
+						"internalType": "contract GnosisSafeProxy",
+						"name": "proxy",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_singleton",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "initializer",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "saltNonce",
+						"type": "uint256"
+					}
+				],
+				"name": "createProxyWithNonce",
+				"outputs": [
+					{
+						"internalType": "contract GnosisSafeProxy",
+						"name": "proxy",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proxyCreationCode",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proxyRuntimeCode",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Stefan George - <stefan@gnosis.pm>",
+			"kind": "dev",
+			"methods": {
+				"calculateCreateProxyWithNonceAddress(address,bytes,uint256)": {
+					"details": "Allows to get the address for a new proxy contact created via `createProxyWithNonce`      This method is only meant for address calculation purpose when you use an initializer that would revert,      therefore the response is returned with a revert. When calling this method set `from` to the address of the proxy factory.",
+					"params": {
+						"_singleton": "Address of singleton contract.",
+						"initializer": "Payload for message call sent to new proxy contract.",
+						"saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+					}
+				},
+				"createProxy(address,bytes)": {
+					"details": "Allows to create new proxy contact and execute a message call to the new proxy within one transaction.",
+					"params": {
+						"data": "Payload for message call sent to new proxy contract.",
+						"singleton": "Address of singleton contract."
+					}
+				},
+				"createProxyWithCallback(address,bytes,uint256,address)": {
+					"details": "Allows to create new proxy contact, execute a message call to the new proxy and call a specified callback within one transaction",
+					"params": {
+						"_singleton": "Address of singleton contract.",
+						"callback": "Callback that will be invoced after the new proxy contract has been successfully deployed and initialized.",
+						"initializer": "Payload for message call sent to new proxy contract.",
+						"saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+					}
+				},
+				"createProxyWithNonce(address,bytes,uint256)": {
+					"details": "Allows to create new proxy contact and execute a message call to the new proxy within one transaction.",
+					"params": {
+						"_singleton": "Address of singleton contract.",
+						"initializer": "Payload for message call sent to new proxy contract.",
+						"saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+					}
+				},
+				"proxyCreationCode()": {
+					"details": "Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address."
+				},
+				"proxyRuntimeCode()": {
+					"details": "Allows to retrieve the runtime code of a deployed Proxy. This can be used to check that the expected Proxy was deployed."
+				}
+			},
+			"title": "Proxy Factory - Allows to create new proxy contact and execute a message call to the new proxy within one transaction.",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GnosisSafeProxyFactory.sol": "GnosisSafeProxyFactory"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/GnosisSafeProxyFactory.sol": {
+			"keccak256": "0x14e4004ba0cefaf58b9898bf6eb9f692dbac0c78f87f98e4d43b08ada388aef7",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://e3a695c1037665fc4c739b8399b1110eb43416af6737cc09fe90c255a1e0b0fc",
+				"dweb:/ipfs/QmShCNxPncmJQkX4pz3RCkMVKxTZXQf7CuGPE7TCr3tv9x"
+			]
+		}
+	},
+	"version": 1
+}
