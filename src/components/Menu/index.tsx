@@ -46,7 +46,7 @@ export default function Menu() {
             <Info size={14} />
             {t('menu.about')}
           </MenuItem>
-          <MenuNavItem id="link" to={'/IDO'}>
+          <MenuNavItem id="link" href="https://kalypad.kalyswap.io">
             <Calendar size={14} />
             {t('menu.idos')}
           </MenuNavItem>
