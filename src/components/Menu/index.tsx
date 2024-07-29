@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { MessageCircle, Send, Info, Twitter, GitHub, Book, Calendar, MessageSquare, CheckSquare } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
-import { IDO_PAGE, LANDING_PAGE } from '../../constants'
+import { IDO_PAGE, LANDING_PAGE, KLC_PAGE } from '../../constants'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import { ApplicationModal } from '../../state/application/actions'
 import { useModalOpen, useToggleModal } from '../../state/application/hooks'
@@ -49,6 +49,10 @@ export default function Menu() {
           <MenuItem id="link" href={IDO_PAGE}>
             <Calendar size={14} />
             {t('IDO')}
+          </MenuItem>
+          <MenuItem id="link" href={KLC_PAGE}>
+            <Calendar size={14} />
+            {t('KLC')}
           </MenuItem>
           <MenuItem id="link" href={TutorialPage}>
             <Book size={14} />
