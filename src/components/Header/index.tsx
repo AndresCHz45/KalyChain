@@ -23,7 +23,7 @@ import LanguageSelection from '../LanguageSelection'
 import { ApplicationModal } from '../../state/application/actions'
 import { useModalOpen, useToggleModal } from '../../state/application/hooks'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
-import { BRIDGE_PAGE, NETWORK_LABELS, NETWORK_CURRENCY, IDO_PAGE } from 'src/constants'
+import { BRIDGE_PAGE, NETWORK_LABELS, NETWORK_CURRENCY, IDO_PAGE, KLC_PAGE } from 'src/constants'
 import { Hidden } from 'src/theme'
 import { useChainId } from 'src/hooks'
 
@@ -313,8 +313,11 @@ export default function Header() {
           <StyledExternalLink id={`info-nav-link`} href={BRIDGE_PAGE}>
             {t('header.charts')} <span style={{ fontSize: '11px' }}>↗</span>
           </StyledExternalLink>
-		  <StyledExternalLink id={`info-nav-link`} href={IDO_PAGE}>
+		      <StyledExternalLink id={`info-nav-link`} href={IDO_PAGE}>
             {t('header.ido')} <span style={{ fontSize: '11px' }}>↗</span>
+          </StyledExternalLink>
+          <StyledExternalLink id={`info-nav-link`} href={KLC_PAGE}>
+            {t('header.klc')} <span style={{ fontSize: '11px' }}>↗</span>
           </StyledExternalLink>
         </HeaderLinks>
       </HeaderRow>
