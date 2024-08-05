@@ -463,7 +463,7 @@
     "seeLess": "Thấy ít"
   },
   "buyPage": {
-    "buyKlcInfo": "Mua KLC bằng fiat từ đối tác Wyre của chúng tôi.",
+    "buyKlcInfo": "Mua KLC bằng fiat từ đối tác AlchemyPay của chúng tôi.",
     "privacyInfo": "KalySwap không lưu trữ lịch sử mua hàng của bạn hoặc bất kỳ dữ liệu cá nhân nào.",
     "firstName": "Tên đầu",
     "lastName": "Tên cuối",
