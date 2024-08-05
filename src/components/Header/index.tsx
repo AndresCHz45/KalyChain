@@ -317,7 +317,7 @@ export default function Header() {
             {t('header.ido')} <span style={{ fontSize: '11px' }}>↗</span>
           </StyledExternalLink>
           <StyledExternalLink id={`info-nav-link`} href={KLC_PAGE}>
-            {t('header.klc')} <span style={{ fontSize: '11px' }}>↗</span>
+            {t('HOLD KLC')} <span style={{ fontSize: '11px' }}>↗</span>
           </StyledExternalLink>
         </HeaderLinks>
       </HeaderRow>
